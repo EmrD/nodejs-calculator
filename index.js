@@ -7,7 +7,7 @@ server.use(express.json());
 server.use(cors({ origin: true }));
 
 server.get("/", (req, res) => {
-  res.send("Welcome to calculator RestAPI. Usage: /plus/:num1/:num2 or /minus/:num1/:num2");
+  res.send("Welcome to calculator RestAPI. Usage: /plus/num1/num2 or /minus/num1/num2");
 });
 
 server.get("/plus/:num1/:num2", (req, res) => {
