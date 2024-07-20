@@ -1,10 +1,8 @@
 const express = require("express");
-const cors = require("cors");
 
 const server = express();
 
 server.use(express.json());
-server.use(cors({ origin: true }));
 
 server.get("/", (req, res) => {
   res.send("Welcome to calculator RestAPI. Usage: /plus/:num1/:num2 or /minus/:num1/:num2");
